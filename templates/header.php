@@ -1,5 +1,5 @@
 <?php
-define("URL", "https://epwalquer.herokuapp.com");
+define("URL", "https://epwalquer.herokuapp.com/");
 
 $title = isset($title) ? $title : "EEEP Professor Walquer Cavalcante Maia";
 
