@@ -1,9 +1,7 @@
 name: CI - Lint / Tests / Deploy
 
 on: [push]
-
   deploy:
-
       - name: deploy into heroku
         uses: akhileshns/heroku-deploy@v3.12.12
         with:
