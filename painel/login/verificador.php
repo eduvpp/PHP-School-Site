@@ -26,7 +26,7 @@ if (!empty($email) and !empty($senha)) {
     $_SESSION['email'] = $email;
     $_SESSION['senha'] = $senha;
     if ($dados->email === $email and $dados->senha === $senha and $dados->condicao == 0) {
-      header("location: ../?pg=inicio");
+      header("location: ?pg=inicio");
     } else {
       $_SESSION['block'] = $_SESSION['block'] + 1;
       $_SESSION['cont'] = $_SESSION['block'];
