@@ -26,7 +26,7 @@ if (!empty($email) and !empty($senha)) {
     $_SESSION['email'] = $email;
     $_SESSION['senha'] = $senha;
     if ($dados->email === $email and $dados->senha === $senha and $dados->condicao == 0) {
-      console.log("entrou");
+      echo "<script>alert('entrou!);</script>";
       header("location: ../?pg=inicio");
     } else {
       $_SESSION['block'] = $_SESSION['block'] + 1;
@@ -43,7 +43,7 @@ if (!empty($email) and !empty($senha)) {
 
         $_SESSION['block'] = $_SESSION['block'] - 4;
       }
-      console.log("Senha errada")
+      echo "<script>alert('deu ruim);</script>";
       header("Location: login.php");
     }
   } else {
